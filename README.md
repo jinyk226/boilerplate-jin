@@ -6,6 +6,7 @@ BABEL/WEBPACK:
 npm install --save-dev webpack webpack-dev-server nodemon @babel/core babel-loader @babel/preset-env @babel/polyfill style-loader css-loader
 
 package.json:
+```
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-server": "nodemon main.js -e html,js,css --ignore public",
@@ -13,8 +14,10 @@ package.json:
     "build-watch": "webpack -w",
     "start": "npm run build-watch & npm run start-server"
   }
+```
 
 webpack.config.js:
+```
 const path = require('path');
 
 module.exports = {
@@ -53,7 +56,7 @@ module.exports = {
     }
   }
 }
-
+```
 
 ======================================================
 
